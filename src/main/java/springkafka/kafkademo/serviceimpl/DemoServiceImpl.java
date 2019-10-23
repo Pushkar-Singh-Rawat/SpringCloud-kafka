@@ -20,6 +20,7 @@ public class DemoServiceImpl implements DemoService{
 
 	@Override
 	public void sendMessage(final MessageModel message) {
+		System.out.println("message: "+message.getSampleMessage());
 		MessageChannel messageChannel=kafkaStreamsDef.producerChannel();
 		messageChannel.send(MessageBuilder.withPayload(message).setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON).build());
 	}

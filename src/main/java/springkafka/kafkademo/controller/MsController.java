@@ -16,7 +16,7 @@ public class MsController {
 	}
 	
 	@GetMapping("/v1/message/send")
-	public void sendMessage(@RequestParam String msg) {
+	public void sendMessage(@RequestParam("msg") String msg) {
 		MessageModel messageObj=new MessageModel();
 		messageObj.setSampleMessage(msg);
 		demoService.sendMessage(messageObj);

@@ -11,6 +11,8 @@ spring:
         producer:
           destination: demoMicroservice
           contentType: application/json
+server:
+  port: 8091
           
           
             
