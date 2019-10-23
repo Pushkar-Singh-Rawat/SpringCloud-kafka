@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9093
+      bindings:
+        consumer:
+          destination: demoMicroservice
+          contentType: application/json
+        producer:
+          destination: demoMicroservice
+          contentType: application/json
+          
+          
+            
