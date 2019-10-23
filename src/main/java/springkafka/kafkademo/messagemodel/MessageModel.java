@@ -1,6 +1,6 @@
 package springkafka.kafkademo.messagemodel;
 
-public class Message {
+public class MessageModel {
 
 	private String sampleMessage;
 
